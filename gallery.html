@@ -65,12 +65,28 @@
       <div class="gallery2 row-span-2 mobile:row-auto mobile:col-auto"></div>
       <div class="gallery3 row-span-2 mobile:row-auto mobile:col-auto"></div>
       <div class="gallery4 row-span-2 mobile:row-auto mobile:col-auto"></div>
-      <div class="gallery5 row-span-3 col-span-2 mobile:row-auto mobile:col-auto"></div>
+      <a class="gallery5 row-span-3 col-span-2 mobile:row-auto mobile:col-auto" href="showcase.html" id="linkToDestination" data-src="IMAGE/showcase/Noi-cung-anh.mp4" data-info="An animation website about 'Nói cùng anh' poem" data-title="NÓI CÙNG ANH"></a>
       <div class="gallery6 row-span-2 mobile:row-auto mobile:col-auto"></div>
       <div class="gallery7 col-span-2 mobile:row-auto mobile:col-auto flex">
         <img src="IMAGE/gallry-page-elements/eye-icon.png" />
         <p>YOU ARE VIEWING</p>
       </div>
     </div>
+
+    <script>
+      // Lấy thẻ a và thêm sự kiện click
+      var link = document.getElementById('linkToDestination');
+      link.addEventListener('click', function(e) {
+          e.preventDefault(); // Ngăn chặn hành động mặc định của thẻ a
+
+          // Lấy giá trị dữ liệu từ thuộc tính data-*
+          var src = link.getAttribute('data-src');
+          var info = link.getAttribute('data-info');
+          var title = link.getAttribute('data-title');
+
+          // Chuyển hướng đến trang đích và truyền dữ liệu qua tham số trên URL
+          window.location.href = link.getAttribute('href') + '?src=' + encodeURIComponent(src) + '&info=' + encodeURIComponent(info) + '&title=' + encodeURIComponent(title);
+      });
+  </script>
   </body>
 </html>

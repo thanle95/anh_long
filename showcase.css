@@ -1,0 +1,32 @@
+.showcase-container {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.showcase-title,
+.showcase-info {
+  background-color: #b1add6;
+  color: #111a41;
+  font-family: Pally;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 2% 4%;
+}
+
+.showcase-info {
+  background-color: #97ceb4;
+  font-size: 2.5vw;
+}
+
+.showcase-action {
+    background-color: #FAAC61;
+  }
+
+.action {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 35%;
+}
