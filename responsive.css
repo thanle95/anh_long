@@ -27,6 +27,7 @@
     p.text-content{
         font-size: 2.5rem;
     }
+
   }
 
 @media only screen and (max-width: 1200px) {
@@ -83,6 +84,7 @@
     p.text-content{
         font-size: 1.6rem;
     }
+
   }
 @media only screen and (max-width: 768px) {
     nav ul{
@@ -119,6 +121,22 @@
     }
     p.text-content{
         font-size: 1.2rem;
+    }
+    
+    .\tablet\:grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .\tablet\:grid-row-none {
+        grid-template-rows: none;
+    }
+
+    .\table\:col-auto{
+        grid-column: auto;
+    }
+
+    .\table\:row-auto{
+        grid-row: auto;
     }
   }
 @media only screen and (max-width: 576px) {
