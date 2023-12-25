@@ -43,7 +43,9 @@ html {
   font-family: Pally;
   src: url(Fonts/WEB/fonts/Pally-Regular.ttf);
 }
-
+.menu_mobile{
+  display: none;
+}
 .navigation-container {
   display: flex;
   list-style-type: none;
@@ -71,7 +73,7 @@ img.navigation-img {
   background: cover no-repeat;
 }
 
-a.navigation-item {
+a.menu-item {
   font-family: navbarfont;
   font-size: 2rem;
   color: rgb(17, 26, 65);
@@ -82,10 +84,78 @@ a.navigation-item {
   text-align: center;
 }
 
-a.navigation-item:hover {
+a.menu-item:hover {
   color: rgb(255, 237, 174);
   text-decoration: underline;
 }
+
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  z-index: 2;
+  font-size: 20px;
+    color: rgb(17,26,65);
+    padding: 10px 15px;
+    border: none;
+}
+
+.mobile-menu-icon span {
+  height: 4px;
+  width: 30px;
+  background-color: rgb(17, 26, 65);
+  margin: 6px 0;
+  display: block;
+}
+.sidebar {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(243,117,123);
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: navbarfont;
+  color: rgb(17,26,65);
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;;
+}
+
+.sidebar a:hover {
+  color: rgb(255,237,174);
+}
+
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(17,26,65);
+  padding: 10px 15px;
+  border: none;
+  text-decoration: none;
+}
+
+.openbtn:hover {
+  color:rgb(255,237,174);
+}
+
 
 .flex {
   display: flex;
