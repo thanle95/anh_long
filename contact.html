@@ -1,9 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="contact.css" />
   </head>
-  <body>
+  <body body class="container">
+    <header>
+      <nav>
+        <ul class="navigation-container">
+          <li class="menu_mobile">
+            <a class="openbtn" onclick="openNav()" href="#"
+              >&#9776; bietshaohok</a
+            >
+          </li>
+          <li>
+            <a class="menu-item" href="about1.html">ABOUT</a>
+          </li>
+          <li>
+            <a class="menu-item" href="gallery.html"
+              >GALLERY</a
+            >
+          </li>
+          <li>
+            <img
+              class="navigation-img"
+              alt="logo"
+              src="IMAGE/logobsh1.png"
+            />
+          </li>
+          <li>
+            <a class="menu-item" href="contact.html"
+              >CONTACT</a
+            >
+          </li>
+          <li>
+            <a class="menu-item" href="index.html">HOME</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="index.html">HOME</a>
+        <a href="about1.html">ABOUT</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </header>
     <div class="contact-container relative">
       <img class="absolute bg" src="IMAGE/contact-page-elements/phone.png" />
 
@@ -39,10 +84,10 @@
         src="IMAGE/contact-page-elements/contact-bg.png"
       />
       <div class="action flex">
-        <a onclick="loadContent('about1')">
+        <a >
           <img src="IMAGE/about-page-elements/back-button.png" />
         </a>
-        <a onclick="loadContent('about2')">
+        <a >
           <img src="IMAGE/about-page-elements/next-button.png" />
         </a>
       </div>

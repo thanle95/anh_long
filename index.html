@@ -11,18 +11,10 @@
     />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="responsive.css" />
+    
+    <link rel="stylesheet" href="home.css" />
     <script>
-      function loadContent(page) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-          if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("content").innerHTML = this.responseText;
-          }
-        };
-        xhttp.open("GET", page + ".html", true);
-        xhttp.send();
-        closeNav();
-      }
+      
       function openNav() {
         document.getElementById("mySidebar").style.width = "250px";
       }
@@ -31,10 +23,6 @@
         document.getElementById("mySidebar").style.width = "0";
       }
 
-      // Load home page content by default
-      window.onload = function () {
-        loadContent("home");
-      };
     </script>
   </head>
   <body class="container">
@@ -47,10 +35,10 @@
             >
           </li>
           <li>
-            <a class="menu-item" onclick="loadContent('about1')">ABOUT</a>
+            <a class="menu-item" href="about1.html">ABOUT</a>
           </li>
           <li>
-            <a class="menu-item" onclick="loadContent('gallery')"
+            <a class="menu-item" href="gallery.html"
               >GALLERY</a
             >
           </li>
@@ -62,12 +50,12 @@
             />
           </li>
           <li>
-            <a class="menu-item" onclick="loadContent('contact')"
+            <a class="menu-item" href="contact.html"
               >CONTACT</a
             >
           </li>
           <li>
-            <a class="menu-item" onclick="loadContent('home')">HOME</a>
+            <a class="menu-item" href="home.html">HOME</a>
           </li>
         </ul>
       </nav>
@@ -75,12 +63,70 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
         >
-        <a onclick="loadContent('home')">HOME</a>
-        <a onclick="loadContent('about1')">ABOUT</a>
-        <a onclick="loadContent('gallery')">GALLERY</a>
-        <a onclick="loadContent('contact')">CONTACT</a>
+        <a href="index.html">HOME</a>
+        <a href="about1.html">ABOUT</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
       </div>
     </header>
-    <main id="content"></main>
+    <div class="landing">
+      <img class="imgmain" src="IMAGE/background/landing1.png">
+      <img class="lodo" src="IMAGE/elements/lodo.png" />
+      <img class="lotim" src="IMAGE/elements/lotim.png" />
+      <img class="lovang" src="IMAGE/elements/lovang.png" />
+      <img class="loxanh" src="IMAGE/elements/loxanh.png" />
+      <img class="loduong" src="IMAGE/elements/loxanhduong.png" />
+      <img class="lovang1" src="IMAGE/elements/lovang1.png" />
+      <img class="loxanh1" src="IMAGE/elements/loxanh1.png" />
+      <img class="lodo1" src="IMAGE/elements/lodo1.png" />
+      <img class="loduong1" src="IMAGE/elements/loxanhduong1.png" />
+      <img class="lotim1" src="IMAGE/elements/lotim2.png" />
+      <img class="lodo2" src="IMAGE/elements/lodo2.png" />
+      <img class="lovang2" src="IMAGE/elements/lovang2.png" />
+      <a onclick="loadContent('about1')"
+        ><img class="next-button" src="IMAGE/elements/button-transition.png"
+      /></a>
+    </div>
+    <div class="landing">
+      <img class="imgmain" src="IMAGE/background/landing2.png">
+      <div class="article_logo flex flex-col">
+        <a onclick="loadContent('contact')"
+          ><img class="home2" src="IMAGE/elements/phone-icon.png"
+        /></a>
+        <a onclick="loadContent('gallery')"
+          ><img class="home2" src="IMAGE/elements/see-icon.png"
+        /></a>
+        <a onclick="loadContent('about1')"
+          ><img class="home2" src="IMAGE/elements/self-icon.png"
+        /></a>
+      </div>
+      <div class="article">
+        <p class="text-content">
+          You are escaping your reality and stepping into the creative realm of
+          @bietshaohok. Welcome to my digital atelier , where pixels meet
+          passion and every click unveils a canvas of creativity.
+        </p>
+      </div>
+      <div class="article_b">
+        <img src="IMAGE/finafinalfavicon-01.png" />
+        <img src="IMAGE/finafinalfavicon-01.png" />
+        <img src="IMAGE/finafinalfavicon-01.png" />
+        <img src="IMAGE/finafinalfavicon-01.png" />
+      </div>
+    </div>
+    <div class="landing">
+      <img class="imgmain" src="IMAGE/background/landing3.png" />
+      <div class="menu_b grid grid-cols-2 items-center">
+        <a class="menu-item menu-item-bottom show" onclick="loadContent('home')">HOME</a>
+        <a class="menu-item menu-item-bottom show" onclick="loadContent('about1')">ABOUT</a>
+        <a class="menu-item menu-item-bottom show" onclick="loadContent('gallery')">GALLERY</a>
+        <a class="menu-item menu-item-bottom show" onclick="loadContent('contact')">CONTACT</a>
+      </div>
+      <div class="logo_b flex">
+        <img src="IMAGE/elements/fb-icon.png" />
+        <img src="IMAGE/elements/ig-icon.png" />
+        <img src="IMAGE/elements/bh-icon.png" />
+      </div>
+    </div>
   </body>
 </html>

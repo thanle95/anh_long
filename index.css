@@ -58,12 +58,11 @@ img {
   max-height: 116px;
   width: 100%;
   max-width: 1440px;
-  position: fixed;
   z-index: 1;
 }
 
 #content {
-  padding-top: 116px;
+  /* padding-top: 116px; */
 }
 
 img.navigation-img {
