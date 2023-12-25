@@ -4,15 +4,25 @@
         font-size: 2rem;
         height: 117px;
     }
-    .article{
+    div.article, .menu-item{
         font-size: 2rem;
     }
-    nav ul li img{
+    img.navigation-img{
         height: 117px;
         object-fit: contain;
     }
     .menu_b ul{
         font-size: 1.5rem;
+    }
+    .container {
+        width: 100%;
+    }
+
+    #content {
+        padding-top: 100px;
+    }
+    div.menu-item-bottom{
+        padding: 10px 5px;
     }
   }
 @media only screen and (max-width: 992px) {
@@ -21,15 +31,23 @@
         padding:  0 20px !important;
         height: 100px;
     }
-    .article{
+    div.article, .menu-item{
         font-size: 1.4rem;
     }
-    nav ul li img{
+    img.navigation-img{
         height: 100px;
         object-fit: contain;
     }
     .menu_b ul{
         font-size: 1.4rem;
+    }
+
+    #content {
+        padding-top: 80px;
+    }
+
+    div.menu-item-bottom{
+        padding: 8px 5px;
     }
   }
 @media only screen and (max-width: 768px) {
@@ -38,10 +56,10 @@
         padding:  0 10px !important;
         height: 80px;
     }
-    .article{
+    div.article, .menu-item{
         font-size: 1rem;
     }
-    nav ul li img{
+    img.navigation-img{
         height: 80px;
         object-fit: contain;
     }
@@ -56,6 +74,15 @@
     .menu-item{
         display: none;
     }
+
+    #content {
+        padding-top: 60px;
+    }
+
+    div.menu-item-bottom{
+        padding: 5px;
+        font-size: 0.5rem;
+    }
   }
 @media only screen and (max-width: 576px) {
     nav ul{
@@ -63,10 +90,10 @@
         padding:  0 0 !important;
         height: 60px;
     }
-    .article{
+    div.article, .menu-item{
         font-size: 0.8rem;
     }
-    nav ul li img{
+    img.navigation-img{
         height: 60px;
         object-fit: contain;
     }
@@ -80,6 +107,11 @@
     }
     .menu-item{
         display: none;
+    }
+
+    div.menu-item-bottom{
+        padding: 5px;
+        font-size: 0.5rem;
     }
   }
 

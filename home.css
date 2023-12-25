@@ -1,11 +1,15 @@
 .landing {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  height: 1000px;
+  width: 100%;
   position: relative;
 }
 
+.imgmain{
+  object-fit: contain;
+  width: 100%;
+}
 .landing-1 {
   background-image: url(IMAGE/background/landing1.png);
 }
@@ -120,7 +124,7 @@
   position: absolute;
   width:5%;
   right:7%;
-  top:62%;
+  top:61%;
   cursor: pointer;
 }
 .next-button:hover{
@@ -146,25 +150,25 @@ opacity: 50%;
   
 }
 
-.content-2 {
-  font-size: 2.875rem;
+.article_logo a{
+  cursor: pointer;
 }
 
 .menu_b{
   position: absolute;
-  bottom: 5%;
+  bottom: 14%;
   left: 8%;
   width: 30%;
-  height:18%;
+  height:10%;
 }
 .logo_b{
   position: absolute;
-  bottom: 7.6875rem;
-  right: 12rem;
+  bottom: 12%;
+  right: 16%;
 }
 .logo_b img{
   margin: auto 3%;
-  width: 5.75rem;
+  width: 5vw;
 }
 .article_b{
   position: absolute;
@@ -177,4 +181,8 @@ opacity: 50%;
   display: inline;
   margin: 0 3%;
   height: 100%;
+}
+
+img.home2 {
+  width:100%;
 }

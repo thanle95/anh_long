@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <div class="landing landing-1 ">
+    <div class="landing">
+      <img class="imgmain" src="IMAGE/background/landing1.png">
       <img class="lodo" src="IMAGE/elements/lodo.png" />
       <img class="lotim" src="IMAGE/elements/lotim.png" />
       <img class="lovang" src="IMAGE/elements/lovang.png" />
@@ -21,16 +22,17 @@
         ><img class="next-button" src="IMAGE/elements/button-transition.png"
       /></a>
     </div>
-    <div class="landing landing-2 ">
+    <div class="landing">
+      <img class="imgmain" src="IMAGE/background/landing2.png">
       <div class="article_logo flex flex-col">
-        <a href="contact.html"
-          ><img class="phone-icon" src="IMAGE/elements/phone-icon.png"
+        <a onclick="loadContent('contact')"
+          ><img class="home2" src="IMAGE/elements/phone-icon.png"
         /></a>
-        <a href="gallery1.html"
-          ><img class="see-icon" src="IMAGE/elements/see-icon.png"
+        <a onclick="loadContent('gallery')"
+          ><img class="home2" src="IMAGE/elements/see-icon.png"
         /></a>
-        <a href="about.html"
-          ><img class="self-icon" src="IMAGE/elements/self-icon.png"
+        <a onclick="loadContent('about1')"
+          ><img class="home2" src="IMAGE/elements/self-icon.png"
         /></a>
       </div>
       <div class="article">
@@ -47,13 +49,13 @@
         <img src="IMAGE/finafinalfavicon-01.png" />
       </div>
     </div>
-    <div class="landing landing-3 ">
+    <div class="landing">
       <img class="imgmain" src="IMAGE/background/landing3.png" />
       <div class="menu_b grid grid-cols-2 items-center">
-        <a class="menu-item" onclick="loadContent('home')">HOME</a>
-        <a class="menu-item" onclick="loadContent('about1')">ABOUT</a>
-        <a class="menu-item" onclick="loadContent('gallery')">GALLERY</a>
-        <a class="menu-item" onclick="loadContent('contact')">CONTACT</a>
+        <a class="menu-item menu-item-bottom show" onclick="loadContent('home')">HOME</a>
+        <a class="menu-item menu-item-bottom show" onclick="loadContent('about1')">ABOUT</a>
+        <a class="menu-item menu-item-bottom show" onclick="loadContent('gallery')">GALLERY</a>
+        <a class="menu-item menu-item-bottom show" onclick="loadContent('contact')">CONTACT</a>
       </div>
       <div class="logo_b flex">
         <img src="IMAGE/elements/fb-icon.png" />
