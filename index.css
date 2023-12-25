@@ -228,6 +228,9 @@ img.navigation-img {
 .grid-rows-3{
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
+.grid-rows-6{
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+}
 .grid-flow-col{
   grid-auto-flow: column;
 }

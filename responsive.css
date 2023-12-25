@@ -184,5 +184,21 @@
     p.contact-big-text{
         font-size: 1.2rem;
     }
+
+    .\mobile\:grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .\mobile\:grid-row-none {
+        grid-template-rows: none;
+    }
+
+    .\mobile\:col-auto{
+        grid-column: auto;
+    }
+
+    .\mobile\:row-auto{
+        grid-row: auto;
+    }
   }
 

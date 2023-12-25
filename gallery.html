@@ -4,20 +4,17 @@
     <link rel="stylesheet" href="gallery.css" />
   </head>
   <body>
-    <main>
-      <div class="container">
-        <div class="page_gallery">
-          <div class="gallery1"></div>
-          <div class="gallery2"></div>
-          <div class="gallery3"></div>
-          <div class="gallery4"></div>
-          <div class="gallery5"></div>
-          <div class="gallery6"></div>
-          <div class="gallery7">
-            <img src="IMAGE/gallry-page-elements/eye-icon.png" />
-          </div>
-        </div>
+    <div class="page_gallery w-full grid grid-rows-6 grid-cols-3 mobile:grid-row-none mobile:grid-cols-1">
+      <div class="gallery1 row-span-2 mobile:row-auto mobile:col-auto"></div>
+      <div class="gallery2 row-span-2 mobile:row-auto mobile:col-auto"></div>
+      <div class="gallery3 row-span-2 mobile:row-auto mobile:col-auto"></div>
+      <div class="gallery4 row-span-2 mobile:row-auto mobile:col-auto"></div>
+      <div class="gallery5 row-span-3 col-span-2 mobile:row-auto mobile:col-auto"></div>
+      <div class="gallery6 row-span-2 mobile:row-auto mobile:col-auto"></div>
+      <div class="gallery7 col-span-2 mobile:row-auto mobile:col-auto flex">
+        <img src="IMAGE/gallry-page-elements/eye-icon.png" />
+        <p>YOU ARE VIEWING</p>
       </div>
-    </main>
+    </div>
   </body>
 </html>
