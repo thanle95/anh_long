@@ -59,6 +59,7 @@ html {
 
   position: fixed;
   width: 1440px;
+  z-index: 1;
 }
 
 #content {
@@ -66,8 +67,7 @@ html {
 }
 
 img.navigation-img {
-  width: 283px;
-  height: 283px;
+  height: 135px;
   flex-shrink: 0;
   background: cover no-repeat;
 }
@@ -92,13 +92,18 @@ a.navigation-item:hover {
 .flex-col {
   flex-direction: column;
 }
-
+.items-start {
+  align-items: flex-start;
+}
 .items-end {
   align-items: flex-end;
 }
 
 .items-center {
   align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-end {
@@ -113,8 +118,20 @@ a.navigation-item:hover {
   position: absolute;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .justify-content {
@@ -127,4 +144,147 @@ a.navigation-item:hover {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-rows-3{
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+.grid-flow-col{
+  grid-auto-flow: column;
+}
+
+.row-span-2{
+  grid-row: span 2 / span 2;
+}
+
+.row-span-3{
+  grid-row: span 3 / span 3;
+}
+
+.col-span-2{
+  	grid-column: span 2 / span 2;
+}
+
+.col-span-3{
+  	grid-column: span 3 / span 3;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2{
+  border: 2px solid black;
+}
+
+.border-4{
+  border: 4px solid black;
+}
+
+.border-t-4{
+  border-top: 4px solid black;
+}
+
+.border-r-4{
+  border-right: 4px solid black;
+}
+
+.border-b-4{
+  border-bottom: 4px solid black;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-80\/100 {
+ width: 80%;
+}
+
+.w-70\/100 {
+  width: 70%;
+ }
+
+ .w-60\/100 {
+  width: 60%;
+ }
+
+ .w-50\/100 {
+  width: 50%;
+ }
+
+ .w-40\/100 {
+  width: 40%;
+ }
+
+ .px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+ }
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.pl-18 {
+  padding-left: 4.5rem;
+}
+
+
+
+.hok-word{
+  width:13%;
+  position:absolute;
+  top:30%;
+  left:3%;
+  opacity: 36%;
+
+}
+
+.biet-word{
+  width:18%;
+  position:absolute;
+  top:20%;
+  left:20%;
+  opacity: 36%;
+
+}
+
+.shao-word{
+  width:18%;
+  position:absolute;
+  top:40%;
+  left:33%;
+  opacity: 36%;
+
+}
+
+.shao1-word{
+  width:18%;
+  position:absolute;
+  bottom:-5%;
+  left:5%;
+  opacity: 36%;
+
+}
+
+.hok1-word{
+  width:13%;
+  position:absolute;
+  bottom:-15%;
+  left:20%;
+  opacity: 36%;
+
+}
+
+.biet1-word{
+  width:18%;
+  position:absolute;
+  bottom:-13%;
+  left:34%;
+  opacity: 36%;
 }

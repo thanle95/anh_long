@@ -4,14 +4,80 @@
     <link rel="stylesheet" href="about.css" />
   </head>
   <body>
-    <div class="about2-container">
-      <div class="action">
-        <a onclick="loadContent('about1')">
-          <img src="IMAGE/about-page-elements/back-button.png" />
-        </a>
-        <a onclick="loadContent('about2')">
-          <img src="IMAGE/about-page-elements/next-button.png" />
-        </a>
+    <div class="about2-container border-4">
+      <div class="w-full grid grid-rows-3 grid-cols-5">
+        <!-- technical skills -->
+        <div class="flex flex-col w-full gap-3 items-center row-span-2 col-span-2 border-t-4 border-r-4">
+          <span class="about2-title">Technical skills</span>
+          <div class="flex gap-6 items-center">
+            <img src="IMAGE/about-page-elements/illustrator 2.png" />
+            <div class="progress-container">
+              <div class="progress-bar w-80/100"></div>
+            </div>
+          </div>
+          <div class="flex gap-6 items-center">
+            <img src="IMAGE/about-page-elements/adobe-photoshop-logo.png" />
+            <div class="progress-container">
+              <div class="progress-bar w-70/100"></div>
+            </div>
+          </div>
+          <div class="flex gap-6 items-center">
+            <img src="IMAGE/about-page-elements/after-effects.png" />
+            <div class="progress-container">
+              <div class="progress-bar w-60/100"></div>
+            </div>
+          </div>
+          <div class="flex gap-6 items-center">
+            <img src="IMAGE/about-page-elements/blender-logo-vector 1.png" />
+            <div class="progress-container">
+              <div class="progress-bar w-50/100"></div>
+            </div>
+          </div>
+          <div class="flex gap-6 items-center">
+            <img src="IMAGE/about-page-elements/davinci 1.png" />
+            <div class="progress-container">
+              <div class="progress-bar w-40/100"></div>
+            </div>
+          </div>
+        </div>
+        <!-- experience -->
+        <div
+          class="col-span-3 row-span-3 border-t-4 border-b-4 flex flex-col items-center gap-3 pb-3"
+        >
+          <span class="about2-title">Experience</span>
+          <div class="flex flex-col items-start w-full px-4 gap-3">
+            <span class="about2-content">2022</span>
+            <span class="about2-content"
+              >. Graphic designer for a RMIT student’s project “ Dove - Tet
+              version</span
+            >
+            <span class="about2-content">. Member of Lumos 97</span>
+          </div>
+          <div class="flex flex-col items-start w-full px-4 gap-3 mt-16">
+            <span class="about2-content">2023</span>
+            <span class="about2-content"
+              >. Making a poster for OASKY bar’s soft opening.
+            </span>
+          </div>
+          <div class="action w-full flex justify-end">
+            <a onclick="loadContent('about1')">
+              <img src="IMAGE/about-page-elements/back-button.png" />
+            </a>
+            <a onclick="loadContent('about2')">
+              <img src="IMAGE/about-page-elements/next-button.png" />
+            </a>
+          </div>
+        </div>
+        <!-- Languages -->
+        <div
+          class="flex flex-col row-span-2 col-span-2 w-full gap-4 items-center border-t-4 border-b-4 border-r-4"
+        >
+          <span class="about2-title">Languagues</span>
+          <div class="flex flex-col items-start w-full gap-3 pl-18">
+            <span class="about2-content">. Vietnamese </span>
+            <span class="about2-content">. English </span>
+          </div>
+        </div>
       </div>
     </div>
   </body>

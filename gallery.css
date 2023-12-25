@@ -1,8 +1,92 @@
-img.thumbnail {
-  width: 480px;
-  height: 294px;
+
+
+.page_gallery{
+  width: 100%;
+  height:100vh;
+  display:grid;
+  background-color: rgb(255,237,174);
+  grid-template-columns:repeat(6,1fr);
+  grid-template-rows: repeat(6,1fr);
+  
+  
 }
 
-.gallery-container a {
-  display: block;
+.gallery1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('IMAGE/gallry-page-elements/THUMBNAIL/final icon 2024-02.jpg');
+}
+.gallery2{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('IMAGE/gallry-page-elements/THUMBNAIL/FINAL FINAL LOGO TAU.png');
+}
+.gallery3{
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('IMAGE/gallry-page-elements/THUMBNAIL/DOVE MUA XUAN.png');
+}
+.gallery4{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('IMAGE/gallry-page-elements/THUMBNAIL/BEWELLI.png');
+}
+.gallery5{
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('IMAGE/gallry-page-elements/THUMBNAIL/NÓI CÙNG ANH.png');
+}
+.gallery6{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('IMAGE/gallry-page-elements/THUMBNAIL/DONUT-01.png');
+}
+.gallery7{
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  height: 100%;
+  width: 100%;
+  
+}
+.gallery7 img  {
+  margin: 10px;
+  height: 90%;
 }
