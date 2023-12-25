@@ -61,12 +61,12 @@
       </div>
     </header>
     <div class="page_gallery w-full grid grid-rows-6 grid-cols-3 mobile:grid-row-none mobile:grid-cols-1">
-      <div class="gallery1 row-span-2 mobile:row-auto mobile:col-auto"></div>
-      <div class="gallery2 row-span-2 mobile:row-auto mobile:col-auto"></div>
-      <div class="gallery3 row-span-2 mobile:row-auto mobile:col-auto"></div>
-      <div class="gallery4 row-span-2 mobile:row-auto mobile:col-auto"></div>
-      <a class="gallery5 row-span-3 col-span-2 mobile:row-auto mobile:col-auto" href="showcase.html" id="linkToDestination" data-src="IMAGE/showcase/Noi-cung-anh.mp4" data-info="An animation website about 'Nói cùng anh' poem" data-title="NÓI CÙNG ANH"></a>
-      <div class="gallery6 row-span-2 mobile:row-auto mobile:col-auto"></div>
+      <a class="gallery1 row-span-2 mobile:row-auto mobile:col-auto" href="#" onclick="redirectToDestination('IMAGE/showcase/epiphany.jpg', 'A set of icons represents for gods and mythology', 'EPIPHANY')"></a>
+      <a class="gallery2 row-span-2 mobile:row-auto mobile:col-auto" href="#" onclick="redirectToDestination('IMAGE/showcase/TAU.jpg', 'A typographical sculpture represents for Vietnamese musical instruments  ', 'TẤU')"></a>
+      <a class="gallery3 row-span-2 mobile:row-auto mobile:col-auto" href="#" onclick="redirectToDestination('IMAGE/showcase/dove-mua-xuan.jpg', 'A project which was a great chance to collaborate with RMIT student', 'DOVE MUA XUAN')"></a>
+      <a class="gallery4 row-span-2 mobile:row-auto mobile:col-auto" href="#" onclick="redirectToDestination('IMAGE/showcase/bewelli.mov', 'An cooking infographic  about beef wellington', 'BEWELLI')"></a>
+      <a class="gallery5 row-span-3 col-span-2 mobile:row-auto mobile:col-auto" href="#" onclick="redirectToDestination('IMAGE/showcase/Noi-cung-anh.mp4', 'An animation website about \'Nói cùng anh\' poem', 'NÓI CÙNG ANH')"></a>
+      <a class="gallery6 row-span-2 mobile:row-auto mobile:col-auto"  href="#" onclick="redirectToDestination('IMAGE/showcase/sweet swirl shuffle.mov', 'Do you want to see a box of donuts dancing?', 'SWEET SWIRL SHUFFLE')"></a>
       <div class="gallery7 col-span-2 mobile:row-auto mobile:col-auto flex">
         <img src="IMAGE/gallry-page-elements/eye-icon.png" />
         <p>YOU ARE VIEWING</p>
@@ -74,19 +74,10 @@
     </div>
 
     <script>
-      // Lấy thẻ a và thêm sự kiện click
-      var link = document.getElementById('linkToDestination');
-      link.addEventListener('click', function(e) {
-          e.preventDefault(); // Ngăn chặn hành động mặc định của thẻ a
-
-          // Lấy giá trị dữ liệu từ thuộc tính data-*
-          var src = link.getAttribute('data-src');
-          var info = link.getAttribute('data-info');
-          var title = link.getAttribute('data-title');
-
-          // Chuyển hướng đến trang đích và truyền dữ liệu qua tham số trên URL
-          window.location.href = link.getAttribute('href') + '?src=' + encodeURIComponent(src) + '&info=' + encodeURIComponent(info) + '&title=' + encodeURIComponent(title);
-      });
+       function redirectToDestination(src, info, title) {
+            // Chuyển hướng đến trang đích và truyền dữ liệu qua tham số trên URL
+            window.location.href = 'showcase.html?src=' + encodeURIComponent(src) + '&info=' + encodeURIComponent(info) + '&title=' + encodeURIComponent(title);
+        }
   </script>
   </body>
 </html>

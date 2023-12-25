@@ -50,34 +50,69 @@
         <a href="contact.html">CONTACT</a>
       </div>
     </header>
-    <div class="showcase-container border-4">
-      <video width="100%" controls>
-        <source src="IMAGE/showcase/Noi-cung-anh.mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <div class="showcase-container border-4" id="showcaseContainer">
+      <div id="mediaContainer"></div>
       <div class="grid grid-cols-5 grid-rows-4">
-        <p
-          class="col-span-3 row-span-full showcase-info flex justify-center items-center  border-4"
-        >
-          An animation website about “ Nói cùng anh “ poem
-        </p>
-        <p
-          class="col-span-2 row-span-3 showcase-title flex justify-center items-center  border-4"
-        >
-          NÓI CÙNG ANH
-        </p>
-        <div class="col-span-2 showcase-action flex justify-center  border-4">
-          <div class="action flex  justify-center">
-            <a>
-              <img src="IMAGE/about-page-elements/back-button.png" />
-            </a>
-            <a>
-              <img src="IMAGE/about-page-elements/next-button.png" />
-            </a>
+          <p class="col-span-3 row-span-full showcase-info flex justify-center items-center  border-4" id="showcaseInfo">
+              An animation website about “Nói cùng anh“ poem
+          </p>
+          <p class="col-span-2 row-span-3 showcase-title flex justify-center items-center  border-4" id="showcaseTitle">
+              NÓI CÙNG ANH
+          </p>
+          <div class="col-span-2 showcase-action flex justify-center  border-4">
+              <div class="action flex  justify-center">
+                  <a>
+                      <img src="IMAGE/about-page-elements/back-button.png" />
+                  </a>
+                  <a>
+                      <img src="IMAGE/about-page-elements/next-button.png" />
+                  </a>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
-
+  </div>
+  
+  <script>
+      // Lấy tham số từ URL
+      var urlParams = new URLSearchParams(window.location.search);
+      var src = urlParams.get('src');
+      var info = urlParams.get('info');
+      var title = urlParams.get('title');
+  
+      // Đổ dữ liệu vào HTML
+      if (src && info && title) {
+          var mediaContainer = document.getElementById('mediaContainer');
+          var showcaseInfo = document.getElementById('showcaseInfo');
+          var showcaseTitle = document.getElementById('showcaseTitle');
+  
+          // Kiểm tra nếu là hình ảnh
+          if (src.endsWith('.png') || src.endsWith('.jpg') || src.endsWith('.jpeg') || src.endsWith('.gif')) {
+              var imgElement = document.createElement('img');
+              imgElement.src = src;
+              imgElement.alt = title;
+              imgElement.style.width = '100%';
+              mediaContainer.appendChild(imgElement);
+          }
+          // Nếu không phải là hình ảnh, giả sử là video
+          else {
+              var videoElement = document.createElement('video');
+              videoElement.width = '100%';
+              videoElement.controls = true;
+              var sourceElement = document.createElement('source');
+              sourceElement.src = src;
+              videoElement.appendChild(sourceElement);
+              mediaContainer.appendChild(videoElement);
+          }
+  
+          // Đặt thông tin showcase
+          showcaseInfo.innerText = info;
+  
+          // Đặt tiêu đề showcase
+          showcaseTitle.innerText = title;
+      } else {
+          // Nếu không có thông tin, chuyển hướng về trang nguồn hoặc xử lý theo ý của bạn
+          window.location.href = 'source.html';
+      }
+  </script>
   </body>
 </html>
