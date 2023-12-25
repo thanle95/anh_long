@@ -385,3 +385,20 @@ img.navigation-img {
 .relative{
   position: relative;
 }
+
+
+.action {
+  right: 5%;
+  position: absolute;
+  width: 15%;
+  bottom: 7%;
+  gap: 5%;
+}
+
+.action a {
+  cursor: pointer;
+}
+
+.action a img {
+  width: 100%;
+}

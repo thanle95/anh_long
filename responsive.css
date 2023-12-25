@@ -28,6 +28,9 @@
         font-size: 2.5rem;
     }
 
+    p.contact-big-text{
+        font-size: 6rem;
+    }
   }
 
 @media only screen and (max-width: 1200px) {
@@ -54,6 +57,9 @@
     }
     div.menu-item-bottom{
         padding: 10px 5px;
+    }
+    p.contact-big-text{
+        font-size: 4rem;
     }
   }
 @media only screen and (max-width: 992px) {
@@ -84,7 +90,9 @@
     p.text-content{
         font-size: 1.6rem;
     }
-
+    p.contact-big-text{
+        font-size: 3rem;
+    }
   }
 @media only screen and (max-width: 768px) {
     nav ul{
@@ -138,6 +146,10 @@
     .\table\:row-auto{
         grid-row: auto;
     }
+
+    p.contact-big-text{
+        font-size: 2rem;
+    }
   }
 @media only screen and (max-width: 576px) {
     nav ul{
@@ -167,6 +179,10 @@
     div.menu-item-bottom{
         padding: 5px;
         font-size: 0.5rem;
+    }
+
+    p.contact-big-text{
+        font-size: 1.2rem;
     }
   }
 
