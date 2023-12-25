@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <div class="landing landing-1">
-      <!-- <img class="lodo" src="IMAGE/elements/lodo.png" />
+    <div class="landing landing-1 ">
+      <img class="lodo" src="IMAGE/elements/lodo.png" />
       <img class="lotim" src="IMAGE/elements/lotim.png" />
       <img class="lovang" src="IMAGE/elements/lovang.png" />
       <img class="loxanh" src="IMAGE/elements/loxanh.png" />
@@ -17,20 +17,49 @@
       <img class="lotim1" src="IMAGE/elements/lotim2.png" />
       <img class="lodo2" src="IMAGE/elements/lodo2.png" />
       <img class="lovang2" src="IMAGE/elements/lovang2.png" />
-      <img class="next-button" src="IMAGE/elements/button-transition.png" /> -->
+      <a onclick="loadContent('about1')"
+        ><img class="next-button" src="IMAGE/elements/button-transition.png"
+      /></a>
     </div>
-    <div class="landing landing-2">
-      <!-- <article id="content-2">
+    <div class="landing landing-2 ">
+      <div class="article_logo flex flex-col">
+        <a href="contact.html"
+          ><img class="phone-icon" src="IMAGE/elements/phone-icon.png"
+        /></a>
+        <a href="gallery1.html"
+          ><img class="see-icon" src="IMAGE/elements/see-icon.png"
+        /></a>
+        <a href="about.html"
+          ><img class="self-icon" src="IMAGE/elements/self-icon.png"
+        /></a>
+      </div>
+      <div class="article">
         <p class="content-2">
           You are escaping your reality and stepping into the creative realm of
           @bietshaohok. Welcome to my digital atelier , where pixels meet
           passion and every click unveils a canvas of creativity.
         </p>
-      </article>
-      <img class="phone-icon" src="IMAGE/elements/phone-icon.png" />
-      <img class="see-icon" src="IMAGE/elements/see-icon.png" />
-      <img class="self-icon" src="IMAGE/elements/self-icon.png" /> -->
+      </div>
+      <div class="article_b">
+        <img src="IMAGE/finafinalfavicon-01.png" />
+        <img src="IMAGE/finafinalfavicon-01.png" />
+        <img src="IMAGE/finafinalfavicon-01.png" />
+        <img src="IMAGE/finafinalfavicon-01.png" />
+      </div>
     </div>
-    <div class="landing landing-3"></div>
+    <div class="landing landing-3 ">
+      <img class="imgmain" src="IMAGE/background/landing3.png" />
+      <div class="menu_b grid grid-cols-2 items-center">
+        <a class="navigation-item" onclick="loadContent('home')">HOME</a>
+        <a class="navigation-item" onclick="loadContent('about1')">ABOUT</a>
+        <a class="navigation-item" onclick="loadContent('gallery')">GALLERY</a>
+        <a class="navigation-item" onclick="loadContent('contact')">CONTACT</a>
+      </div>
+      <div class="logo_b flex">
+        <img src="IMAGE/elements/fb-icon.png" />
+        <img src="IMAGE/elements/ig-icon.png" />
+        <img src="IMAGE/elements/bh-icon.png" />
+      </div>
+    </div>
   </body>
 </html>

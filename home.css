@@ -2,8 +2,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  max-height: 1024px;
+  height: 1000px;
+  position: relative;
 }
 
 .landing-1 {
@@ -18,105 +18,163 @@
   background-image: url(IMAGE/background/landing3.png);
 }
 
-.lodo {
+
+.lodo{
   position: absolute;
-  width: 5%;
-  opacity: 56%;
+  width:5%;
+  opacity:56%;
   left: 10%;
-  top: 13%;
+  top:5%;
 }
 
-.lotim {
+.lotim{
   position: absolute;
-  width: 6%;
-  opacity: 56%;
+  width:6%;
+  opacity:56%;
   left: 8%;
-  top: 40%;
+  top:40%;
 }
 
-.lovang {
+.lovang{
   position: absolute;
-  width: 3.5%;
-  opacity: 56%;
+  width:3.5%;
+  opacity:56%;
   left: 16%;
-  top: 27%;
+  top:27%;
 }
 
-.loxanh {
+.loxanh{
   position: absolute;
-  width: 4%;
-  opacity: 56%;
+  width:4%;
+  opacity:56%;
   left: 23%;
-  top: 14%;
+  top:10%;
 }
 
-.loduong {
+.loduong{
   position: absolute;
-  width: 4%;
-  opacity: 56%;
+  width:4%;
+  opacity:56%;
   left: 35%;
-  top: 20%;
+  top:15%;
 }
 
-.lovang1 {
+.lovang1{
   position: absolute;
-  width: 4%;
-  opacity: 56%;
+  width:4%;
+  opacity:56%;
   left: 50%;
-  top: 14%;
+  top:6%;
 }
 
-.loxanh1 {
+.loxanh1{
   position: absolute;
-  width: 4%;
-  opacity: 56%;
+  width:4%;
+  opacity:56%;
   left: 56%;
-  top: 30%;
+  top:20%;
 }
 
-.lodo1 {
+
+.lodo1{
   position: absolute;
-  width: 4%;
-  opacity: 56%;
+  width:4%;
+  opacity:56%;
   left: 50%;
-  top: 45%;
+  top:35%;
 }
 
-.loduong1 {
+.loduong1{
   position: absolute;
-  width: 2.5%;
-  opacity: 56%;
+  width:2.5%;
+  opacity:56%;
   left: 65%;
-  top: 17%;
+  top:10%;
 }
 
-.lotim1 {
+.lotim1{
   position: absolute;
-  width: 4%;
-  opacity: 56%;
+  width:4%;
+  opacity:56%;
   left: 73%;
-  top: 28%;
+  top:20%;
 }
 
-.lodo2 {
+.lodo2{
   position: absolute;
-  width: 4%;
-  opacity: 56%;
+  width:4%;
+  opacity:56%;
   left: 85%;
-  top: 15%;
+  top:8%;
 }
 
-.lovang2 {
+.lovang2{
   position: absolute;
-  width: 2.5%;
-  opacity: 56%;
+  width:2.5%;
+  opacity:56%;
   left: 90%;
-  top: 28%;
+  top:20%;
 }
 
-.next-button {
+.next-button{
   position: absolute;
-  width: 5%;
-  right: 4%;
-  top: 61%;
+  width:5%;
+  right:7%;
+  top:62%;
+  cursor: pointer;
+}
+.next-button:hover{
+opacity: 50%;
+}
+
+
+.article{
+  position: absolute;
+  top: 30%;
+  left: 23%;
+  width: 65%;
+  text-align: justify;
+  color: rgb(17,26,65);
+  font-family: bietshaohokfont;
+  font-size: 2rem;
+}
+.article_logo{
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  width: 10%;
+  
+}
+
+.content-2 {
+  font-size: 2.875rem;
+}
+
+.menu_b{
+  position: absolute;
+  bottom: 5%;
+  left: 8%;
+  width: 30%;
+  height:18%;
+}
+.logo_b{
+  position: absolute;
+  bottom: 7.6875rem;
+  right: 12rem;
+}
+.logo_b img{
+  margin: auto 3%;
+  width: 5.75rem;
+}
+.article_b{
+  position: absolute;
+  top: 72%;
+  left: 8%;
+  width: 85%;  
+  height: 20%; 
+}
+.article_b img{
+  display: inline;
+  margin: 0 3%;
+  height: 100%;
 }

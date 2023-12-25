@@ -49,8 +49,7 @@ html {
   list-style-type: none;
   justify-content: space-evenly;
   align-items: center;
-  font-family: navbarfont;
-  font-size: 2rem;
+
   /* font-size: 39px; */
   padding: 0px 78px;
   background-color: rgb(243, 117, 123);
@@ -73,11 +72,14 @@ img.navigation-img {
 }
 
 a.navigation-item {
+  font-family: navbarfont;
+  font-size: 2rem;
   color: rgb(17, 26, 65);
   text-decoration: none;
   padding: 20px 15px;
   transition: color 0.3s, text-decoration 0.3s;
   cursor: pointer;
+  text-align: center;
 }
 
 a.navigation-item:hover {
@@ -140,6 +142,10 @@ a.navigation-item:hover {
 
 .grid {
   display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-3 {
