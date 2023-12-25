@@ -1,0 +1,218 @@
+html{
+    height:100vh;
+    width:100%;
+}
+
+
+.container{
+    background-image: url(IMAGE/background/landing1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100vh;
+    background-size: cover;
+}
+
+#main-2{
+    background-image: url(IMAGE/background/landing2.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    grid-template-rows: repeat(28,1fr);
+}
+
+article#content-2{
+    grid-column: 4/12;
+    grid-row:9/13;
+    color: rgb(17,26,65);
+    font-family: bietshaohokfont;
+    font-size: 4vh;
+}
+
+.phone-icon{
+    width:100%;
+    grid-column: 2/3;
+    grid-row:7/10;
+}
+
+.see-icon{
+    width:100%;
+    grid-column:2/3;
+    grid-row:11/14;
+}
+
+.self-icon{
+    width:100%;
+    grid-column:2/3;
+    grid-row:16/19
+}
+
+#bg3{
+    background-image: url(IMAGE/background/landing3.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+
+@font-face {
+    font-family: bietshaohokfont;
+    src: url(Fonts/OTF/Pally-Medium.otf);
+  }
+
+@font-face {
+    font-family: navbarfont;
+    src: url(Fonts/Fonts1/fontnavbar/BespokeStencil-Extrabold.otf)
+}
+
+nav ul img{
+    width:13%;
+    position: absolute;
+    top:-4.6%;
+    left:42%;
+
+
+    
+}
+nav ul{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-family: navbarfont;
+    font-size: 2rem;
+    padding: 20px;
+    background-color: rgb(243,117,123);
+    border: 4px solid black;
+    margin-top: -8px;
+    margin-left:-7px;
+    margin-right: -8px;
+
+}
+
+nav a{
+    color:rgb(17,26,65);
+    text-decoration: none;
+    padding: 20px 15px;
+    transition:color 0.3s,
+    text-decoration 0.3s;
+}
+
+nav a:hover{
+    color:rgb(255,237,174);
+    text-decoration: underline;
+}
+
+.lodo{
+    position: absolute;
+    width:5%;
+    opacity:56%;
+    left: 10%;
+    top:13%;
+}
+
+.lotim{
+    position: absolute;
+    width:6%;
+    opacity:56%;
+    left: 8%;
+    top:40%;
+}
+
+.lovang{
+    position: absolute;
+    width:3.5%;
+    opacity:56%;
+    left: 16%;
+    top:27%;
+}
+
+.loxanh{
+    position: absolute;
+    width:4%;
+    opacity:56%;
+    left: 23%;
+    top:14%;
+}
+
+.loduong{
+    position: absolute;
+    width:4%;
+    opacity:56%;
+    left: 35%;
+    top:20%;
+}
+
+.lovang1{
+    position: absolute;
+    width:4%;
+    opacity:56%;
+    left: 50%;
+    top:14%;
+}
+
+.loxanh1{
+    position: absolute;
+    width:4%;
+    opacity:56%;
+    left: 56%;
+    top:30%;
+}
+
+
+.lodo1{
+    position: absolute;
+    width:4%;
+    opacity:56%;
+    left: 50%;
+    top:45%;
+}
+
+.loduong1{
+    position: absolute;
+    width:2.5%;
+    opacity:56%;
+    left: 65%;
+    top:17%;
+}
+
+.lotim1{
+    position: absolute;
+    width:4%;
+    opacity:56%;
+    left: 73%;
+    top:28%;
+}
+
+.lodo2{
+    position: absolute;
+    width:4%;
+    opacity:56%;
+    left: 85%;
+    top:15%;
+}
+
+.lovang2{
+    position: absolute;
+    width:2.5%;
+    opacity:56%;
+    left: 90%;
+    top:28%;
+}
+
+.next-button{
+    position: absolute;
+    width:5%;
+    right:4%;
+    top:61%;
+}
+
+
+
+
+
+
+

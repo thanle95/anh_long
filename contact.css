@@ -1,0 +1,80 @@
+.contact-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 1226px;
+  background-color: #ffeeae;
+  border: 4px solid black;
+  position: relative;
+}
+
+.message-img {
+  top: 30%;
+  right: 48%;
+}
+.green {
+  z-index: 2;
+}
+
+.orange {
+  top: 160px;
+  left: -10px;
+}
+.contact-container {
+  z-index: -1;
+}
+
+.contact-container .bg {
+  top: -116px; /*bằng kích thước navigation*/
+}
+
+.contact-container .text {
+  color: #111a40;
+  font-family: Pally;
+  font-size: 39.962px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  padding-top: 226px;
+  padding-left: 100px;
+}
+
+.social-networks {
+  margin-top: 36px;
+  margin-left: 204px;
+}
+
+.action-container {
+  margin-top: 200px;
+  padding: 0px 100px 28px 100px;
+}
+
+.action-container-text {
+  color: #111a41;
+  font-family: Pally;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 93%; /* 89.28px */
+}
+
+.contact-footer {
+  /* margin-left: -4px; */
+}
+
+.contact-logo {
+  width: 513px;
+}
+
+.contact-logo-text {
+  bottom: -220px;
+  color: #111a40;
+  font-family: Pally;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

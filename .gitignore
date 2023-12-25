@@ -1,0 +1,5 @@
+# Ignore IMAGE folder
+IMAGE/
+
+# Ignore Fonts folder
+Fonts/

@@ -1,0 +1,122 @@
+.landing {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  max-height: 1024px;
+}
+
+.landing-1 {
+  background-image: url(IMAGE/background/landing1.png);
+}
+
+.landing-2 {
+  background-image: url(IMAGE/background/landing2.png);
+}
+
+.landing-3 {
+  background-image: url(IMAGE/background/landing3.png);
+}
+
+.lodo {
+  position: absolute;
+  width: 5%;
+  opacity: 56%;
+  left: 10%;
+  top: 13%;
+}
+
+.lotim {
+  position: absolute;
+  width: 6%;
+  opacity: 56%;
+  left: 8%;
+  top: 40%;
+}
+
+.lovang {
+  position: absolute;
+  width: 3.5%;
+  opacity: 56%;
+  left: 16%;
+  top: 27%;
+}
+
+.loxanh {
+  position: absolute;
+  width: 4%;
+  opacity: 56%;
+  left: 23%;
+  top: 14%;
+}
+
+.loduong {
+  position: absolute;
+  width: 4%;
+  opacity: 56%;
+  left: 35%;
+  top: 20%;
+}
+
+.lovang1 {
+  position: absolute;
+  width: 4%;
+  opacity: 56%;
+  left: 50%;
+  top: 14%;
+}
+
+.loxanh1 {
+  position: absolute;
+  width: 4%;
+  opacity: 56%;
+  left: 56%;
+  top: 30%;
+}
+
+.lodo1 {
+  position: absolute;
+  width: 4%;
+  opacity: 56%;
+  left: 50%;
+  top: 45%;
+}
+
+.loduong1 {
+  position: absolute;
+  width: 2.5%;
+  opacity: 56%;
+  left: 65%;
+  top: 17%;
+}
+
+.lotim1 {
+  position: absolute;
+  width: 4%;
+  opacity: 56%;
+  left: 73%;
+  top: 28%;
+}
+
+.lodo2 {
+  position: absolute;
+  width: 4%;
+  opacity: 56%;
+  left: 85%;
+  top: 15%;
+}
+
+.lovang2 {
+  position: absolute;
+  width: 2.5%;
+  opacity: 56%;
+  left: 90%;
+  top: 28%;
+}
+
+.next-button {
+  position: absolute;
+  width: 5%;
+  right: 4%;
+  top: 61%;
+}

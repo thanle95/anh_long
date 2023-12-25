@@ -1,0 +1,37 @@
+.about-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  max-height: 900px;
+  background-image: url(IMAGE/about-page-elements/About-bg.png);
+}
+
+.text.right {
+  margin-top: 83px;
+  margin-right: 33px;
+  color: #111a41;
+
+  font-family: Pally;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.right {
+  width: 50%;
+}
+
+.action {
+  margin-right: 66px;
+}
+
+.action a {
+  cursor: pointer;
+}
+
+.about2-container {
+  padding-top: 73px;
+  background-color: #ffeeae;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bietshaohok</title>
+    <link
+      rel="shortcut icon"
+      href="IMAGE/finafinalfavicon-01.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      function loadContent(page) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("content").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", page + ".html", true);
+        xhttp.send();
+      }
+
+      // Load home page content by default
+      window.onload = function () {
+        // loadContent("home");
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navigation-container">
+          <li>
+            <a class="navigation-item" onclick="loadContent('about1')">ABOUT</a>
+          </li>
+          <li>
+            <a class="navigation-item" onclick="loadContent('gallery')"
+              >GALLERY</a
+            >
+          </li>
+          <li>
+            <img
+              class="navigation-img"
+              alt="logo"
+              class="logo"
+              src="IMAGE/logobsh.png"
+            />
+          </li>
+          <li>
+            <a class="navigation-item" onclick="loadContent('contact')"
+              >CONTACT</a
+            >
+          </li>
+          <li>
+            <a class="navigation-item" onclick="loadContent('home')">HOME</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="content"></main>
+  </body>
+</html>
