@@ -2,19 +2,24 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -116px; /*kích thước navigation bar */
-  height: 900px;
+  width: 100%;
   background-image: url(IMAGE/about-page-elements/About-bg.png);
   position: relative;
 }
 
-.text.right {
-  margin-top: 83px;
-  margin-right: 33px;
-  width: 690px;
+img.about{
+  object-fit: contain;
+  width: 100%;
+}
+.text-right {
+  position: absolute;
+  margin-top: 5%;
+  margin-right: 3%;
+  padding-left: 3%;
+  width: 50%;
   color: #111a41;
 
   font-family: Pally;
-  font-size: 46px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -25,14 +30,23 @@
 }
 
 .action {
-  margin-right: 66px;
+  margin-right: 5%;
+  position: absolute;
+  width: 15%;
+  bottom: 5%;
+  gap: 5%;
 }
 
 .action a {
   cursor: pointer;
 }
 
+.action a img {
+  width: 100%;
+}
+
 .about2-container {
+  position: relative;
   padding-top: 73px;
   background-color: #ffeeae;
   height: 900px;
@@ -79,48 +93,48 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 position: absolute;
-opacity: .4;
+opacity: .36;
 overflow: hidden;
 }
 
 .hok{
   transform: rotate(-17.5deg);  
-  font-size: 106.435px;
-  top: 42px;
-  left: 26px;
+  font-size: 6vw;
+  top: 8%;
+  left: 3%;
 }
 
 .biet{
   transform: rotate(16.51deg);
-  top: 42px;
-  left: 256px;
-  font-size: 144px;
+  font-size: 8vw;
+  top: 5%;
+  left: 18%;
 }
 
 .shao {
   transform: rotate(-4.27deg);
-  top: 250px;
-  left: 469px;
-  font-size: 116.39px;
+  top: 28%;
+  left: 33%;
+  font-size: 7vw;
 }
 
 .shao1{
   transform: rotate(-13.91deg);
-  top: 600px;
-  left: 20px;
-  font-size: 106.53px;
+  bottom: 14%;
+  left: 3%;
+  font-size: 6vw;
 }
 
 .hok1{
   transform: rotate(-4.27deg);
-  top: 740px;
-  left: 214px;
-  font-size: 115.76px;
+  bottom: 0%;
+  left: 18%;
+  font-size: 7vw;
 }
 
 .biet1{
   transform: rotate(16.51deg);
-  top: 670px;
-  left: 451px;
-  font-size: 144px;
+  bottom: 6%;
+  left: 33%;;
+  font-size: 8vw;
 }

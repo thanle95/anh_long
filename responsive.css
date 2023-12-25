@@ -1,10 +1,40 @@
+@media only screen and (max-width: 1440px) {
+    nav ul{
+        font-size: 2rem;
+        height: 117px;
+    }
+    div.article, .menu-item{
+        font-size: 2rem;
+    }
+    img.navigation-img{
+        height: 117px;
+        object-fit: contain;
+    }
+    .menu_b ul{
+        font-size: 1.5rem;
+    }
+    .container {
+        width: 100%;
+    }
+
+    #content {
+        padding-top: 100px;
+    }
+    div.menu-item-bottom{
+        padding: 10px 5px;
+    }
+
+    p.text-content{
+        font-size: 2.5rem;
+    }
+  }
 
 @media only screen and (max-width: 1200px) {
     nav ul{
         font-size: 2rem;
         height: 117px;
     }
-    div.article, .menu-item{
+    div.article, .menu-item, p.text-content{
         font-size: 2rem;
     }
     img.navigation-img{
@@ -49,6 +79,10 @@
     div.menu-item-bottom{
         padding: 8px 5px;
     }
+
+    p.text-content{
+        font-size: 1.6rem;
+    }
   }
 @media only screen and (max-width: 768px) {
     nav ul{
@@ -83,6 +117,9 @@
         padding: 5px;
         font-size: 0.5rem;
     }
+    p.text-content{
+        font-size: 1.2rem;
+    }
   }
 @media only screen and (max-width: 576px) {
     nav ul{
@@ -90,7 +127,7 @@
         padding:  0 0 !important;
         height: 60px;
     }
-    div.article, .menu-item{
+    div.article, .menu-item, p.text-content{
         font-size: 0.8rem;
     }
     img.navigation-img{

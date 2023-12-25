@@ -363,3 +363,21 @@ img.navigation-img {
   left:34%;
   opacity: 36%;
 }
+
+
+.article{
+  position: absolute;
+  top: 30%;
+  left: 23%;
+  width: 65%;
+  text-align: justify;
+  color: rgb(17,26,65);
+  font-family: bietshaohokfont;
+  font-size: 2rem;
+}
+
+.text-content{
+  font-size: 2.857rem;
+  color: rgb(17,26,65);
+  font-family: bietshaohokfont;
+}
